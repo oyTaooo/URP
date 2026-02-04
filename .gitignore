@@ -4,3 +4,5 @@
 /UserSettings
 /*.csproj
 /*.sln
+/.vs
+/obj
