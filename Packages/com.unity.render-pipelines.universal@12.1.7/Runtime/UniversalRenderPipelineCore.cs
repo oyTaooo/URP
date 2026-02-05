@@ -270,6 +270,7 @@ namespace UnityEngine.Rendering.Universal
         public int shadowmapDepthBufferBits;
         public List<Vector4> bias;
         public List<int> resolution;
+        public bool supportsFrameSplit;
 
         internal bool isKeywordAdditionalLightShadowsEnabled;
         internal bool isKeywordSoftShadowsEnabled;

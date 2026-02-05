@@ -218,6 +218,7 @@ namespace UnityEngine.Rendering.Universal
         [SerializeField] bool m_SoftShadowsSupported = false;
         [SerializeField] bool m_ConservativeEnclosingSphere = false;
         [SerializeField] int m_NumIterationsEnclosingSphere = 64;
+        [SerializeField] bool m_FrameSplitSupported = false;
 
         // Light Cookie Settings
         [SerializeField] LightCookieResolution m_AdditionalLightsCookieResolution = LightCookieResolution._2048;
@@ -896,6 +897,11 @@ namespace UnityEngine.Rendering.Universal
             get { return m_SoftShadowsSupported; }
             internal set { m_SoftShadowsSupported = value; }
         }
+        public bool supportsFrameSplit
+        {
+            get { return m_FrameSplitSupported; }
+            internal set { m_FrameSplitSupported = value; }
+        }
 
         public bool supportsDynamicBatching
         {
@@ -1212,6 +1218,7 @@ namespace UnityEngine.Rendering.Universal
                 k_AssetPreviousVersion = k_AssetVersion;
                 k_AssetVersion = 9;
             }
+
 
 #if UNITY_EDITOR
             if (k_AssetPreviousVersion != k_AssetVersion)
