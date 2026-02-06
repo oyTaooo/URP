@@ -3,3 +3,12 @@
 
 # 2026.2.5 
 添加csm分帧特性 （一直再用项目内自定义SRP管线,不得不说URP改起来确实蛋疼）
+
+# 2026.2.6 
+添加软光栅剔除以及测试场景
+
+参考链接
+
+https://game.academy.163.com/course/careerArticle?course=923&isMaster=0
+
+https://github.com/GameTechDev/MaskedOcclusionCulling
