@@ -329,7 +329,6 @@ namespace UnityEngine.Rendering.Universal.Internal
                 {
                     if (((1 << cascadeIndex) & m_CascadeUpdateMask) == 0)
                         continue;
-                    Debug.Log($"ssssssssssssssssssssss {cascadeIndex} {Time.frameCount}");
                     settings.splitData = m_CascadeSlices[cascadeIndex].splitData;
 
                     Vector4 shadowBias = ShadowUtils.GetShadowBias(ref shadowLight, shadowLightIndex, ref renderingData.shadowData, m_CascadeSlices[cascadeIndex].projectionMatrix, m_CascadeSlices[cascadeIndex].resolution);
